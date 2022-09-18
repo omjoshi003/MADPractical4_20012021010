@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/webUrl"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginRight="10dp"
+        android:hint="Web Url"
+        app:layout_constraintBottom_toBottomOf="@id/btnBrowse"
+        app:layout_constraintEnd_toStartOf="@id/btnBrowse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnBrowse"
+        app:startIconDrawable="@drawable/ic_baseline_language_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnBrowse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="Browse"
+        app:layout_constraintBottom_toTopOf="@id/btnCall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/webUrl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/call"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:hint="Call Number"
+        app:layout_constraintBottom_toBottomOf="@id/btnCall"
+        app:layout_constraintEnd_toStartOf="@id/btnCall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnCall"
+        app:startIconDrawable="@drawable/ic_baseline_local_phone_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="Call"
+        app:layout_constraintBottom_toTopOf="@id/btnContact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/call"
+        app:layout_constraintTop_toBottomOf="@id/btnBrowse" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contact"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:hint="Contact List"
+        app:layout_constraintBottom_toBottomOf="@id/btnContact"
+        app:layout_constraintEnd_toStartOf="@id/btnContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnContact"
+        app:startIconDrawable="@drawable/ic_baseline_contact_phone_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="Contact"
+        app:layout_constraintBottom_toTopOf="@id/btnCallLog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/contact"
+        app:layout_constraintTop_toBottomOf="@id/btnCall" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/callLog"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:hint="Call Log"
+        app:layout_constraintBottom_toBottomOf="@id/btnCallLog"
+        app:layout_constraintEnd_toStartOf="@id/btnCallLog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnCallLog"
+        app:startIconDrawable="@drawable/ic_baseline_phone_forwarded_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCallLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="Call Log"
+        app:layout_constraintBottom_toTopOf="@id/btnGallery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/callLog"
+        app:layout_constraintTop_toBottomOf="@id/btnContact" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gallery"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:hint="Gallery"
+        app:layout_constraintBottom_toBottomOf="@id/btnGallery"
+        app:layout_constraintEnd_toStartOf="@id/btnGallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnGallery"
+        app:startIconDrawable="@drawable/ic_baseline_photo_library_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallary"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toTopOf="@id/btnCamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gallery"
+        app:layout_constraintTop_toBottomOf="@id/btnCallLog" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/camera"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginRight="10dp"
+        android:hint="Camera"
+        app:layout_constraintBottom_toBottomOf="@id/btnCamera"
+        app:layout_constraintEnd_toStartOf="@id/btnCamera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnCamera"
+        app:startIconDrawable="@drawable/ic_baseline_camera_alt_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="Camera"
+        app:layout_constraintBottom_toTopOf="@id/btnAlarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/camera"
+        app:layout_constraintTop_toBottomOf="@id/btnGallery" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/alarm"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:hint="Alarm"
+        app:layout_constraintBottom_toBottomOf="@id/btnAlarm"
+        app:layout_constraintEnd_toStartOf="@id/btnAlarm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnAlarm"
+        app:startIconDrawable="@drawable/ic_baseline_alarm_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="Alarm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/alarm"
+        app:layout_constraintTop_toBottomOf="@id/btnCamera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
