@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/MAD/MADPractical4_20012021010/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/MADPractical4_20012021010/app/src/main/res/layout/activity_explicit_intent1.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/MADPractical4_20012021010/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/MAD/MADPractical4_20012021010/app/src/main/res/layout/activity_second.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
